@@ -1,0 +1,176 @@
+.prices {
+    position: relative;
+    padding: 72px 0 74px;
+    background-color: #49c38f;
+    color: #fff;
+    text-align: center;
+    //Медиа запрос для планшетов и выше
+    @media (min-width: 768px) {
+        padding: 72px 0 80px;
+        background: #49c38f url("./../img/prices/bg-prices.webp") center/cover no-repeat;
+        &::before {
+            content: "";
+            position: absolute;
+            display: block;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+    }
+    //Медиа запрос для десктопов
+    @media (min-width: 1200px) {
+        padding: 104px 0 90px;
+    }
+}
+.prices__content {
+    position: relative;
+}
+.prices__title {
+    color: #fff;
+    margin-bottom: 33px;
+    //Медиа запрос для планшетов и выше
+    @media (min-width: 768px) {
+        margin-bottom: 30px;
+    }
+    //Медиа запрос для десктопов
+    @media (min-width: 1200px) {
+        margin-bottom: 71px;
+    }
+}
+.prices__subtitle {
+    color: #fff;
+    margin-bottom: 41px;
+    //Медиа запрос для планшетов и выше
+    @media (min-width: 768px) {
+        margin-bottom: 62px;
+    }
+    //Медиа запрос для десктопов
+    @media (min-width: 1200px) {
+        margin-bottom: 77px;
+    }
+}
+.prices__cards {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    //Медиа запрос для планшетов и выше
+    @media (min-width: 768px) {
+        flex-direction: row;
+    }
+    //Медиа запрос для десктопов
+    @media (min-width: 1200px) {
+        justify-content: center;
+    }
+}
+.prices__cards-item {
+    width: 290px;
+    margin-bottom: 19px;
+    padding: 37px 0 41px;
+    background-color: rgba(0, 0, 0, 0.75);
+    border-radius: 8px;
+    &:last-child {
+        margin-right: 0;
+        margin-bottom: 0;
+    }
+    transition: all 0.2s ease;
+    &:hover {
+        background-color: rgba(48, 79, 254, 0.95);
+        outline: none;
+        transform: scale(1.02,1.02);
+    }
+    &:hover .prices__cards-select {
+        background-color: #fff;
+        color: #666666;
+        outline: none;
+    }
+    //Медиа запрос для планшетов и выше
+    @media (min-width: 768px) {
+        margin-bottom: 0;
+        margin-right: 24px;
+        width: 230px;
+    }
+    //Медиа запрос для десктопов
+    @media (min-width: 1200px) {
+        width: 303px;
+        padding: 39px 0;
+        margin-right: 30px;
+    }
+}
+.prices__cards-item-title {
+    color: #b2b2b2;
+    margin-bottom: 8px;
+    letter-spacing: 1.2px;
+}
+.prices__cards-item-price {
+    margin-bottom: 30px;
+}
+.prices__cards-item-goods {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);;
+    padding-top: 34px;
+    margin-bottom: 40px;
+    //Медиа запрос для десктопов
+    @media (min-width: 1200px) {
+        margin-bottom: 37px;
+    }
+}
+.prices__cards-item-goods li {
+    list-style-type: none;
+    font-size: 16px;
+    margin-bottom: 11px;
+    &:last-child {
+        margin-bottom: 0;
+    }
+    //Медиа запрос для десктопов
+    @media (min-width: 1200px) {
+        margin-bottom: 21px;
+    }
+}
+.prices__goods-list {
+    margin: 0;
+    padding: 0;
+}
+.prices__cards-price {
+    font-size: 80px;
+    font-weight: 700;
+    letter-spacing: 3.8px;
+    margin-bottom: 16px;
+}
+.prices__cards-price-currency {
+    display: inline-block;
+    padding: 4px 9px 4px 19px;
+    border-radius: 11.5pt;
+    background-color: rgba(255, 255, 255, 0.1);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.prices__cards-select {
+    background-color: rgba(0, 0, 0, 0.75);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 25px;
+    height: 50px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2.9px;
+    padding: 0 28px 0 30px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    &:hover {
+        background-color: #fff;
+        color: #666666;
+        outline: none;
+        transform: scale(1.1,1.1);
+    }
+}
+.prices__cards-select--special {
+    transition: all 0.2s ease;
+    &:hover {
+        outline: none;
+        transform: scale(1.1,1.1);
+    }
+}

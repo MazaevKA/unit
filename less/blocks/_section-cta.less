@@ -1,0 +1,72 @@
+.cta {
+    background: url(./../img/cta/cta-bg.webp) no-repeat center/cover;
+    position: relative;
+    padding: 72px 0 75px 0;
+    &::before {
+        content: "";
+        position: absolute;
+        display: block;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background: rgba(10, 130, 78, 0.7);
+    }
+    //Медиа запрос для планшетов и выше
+    @media (min-width: 768px) {
+        padding: 70px 0 78px 0;
+    }
+    //Медиа запрос для десктопов
+    @media (min-width: 1200px) {
+        padding: 82px 0 90px 0;
+    }
+}
+.cta__content {
+    position: relative;
+    text-align: center;
+}
+.cta__content span {
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2.2px;
+}
+.cta__title {
+    margin: 0;
+    margin-bottom: 34px;
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 1.4;
+    //Медиа запрос для планшетов и выше
+    @media (min-width: 768px) {
+        margin-bottom: 52px;
+    }
+    //Медиа запрос для десктопов
+    @media (min-width: 1200px) {
+        margin-bottom: 46px;
+    }
+}
+.cta__button {
+    display: inline-block;
+    text-decoration: none;
+    font-family: Montserrat;
+    padding: 18px 37px 0 44px;
+    height: 60px;
+    border: 2px solid #ffffff;
+    border-radius: 30px;
+    background-color: #ffffff;
+    cursor: pointer;
+    color: #2bb279;
+    outline: none;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2.8px;
+    transition: all 0.2s ease;
+    &:hover {
+        outline: none;
+        background-color: #2bb279;
+        color: #ffffff;
+    }
+}

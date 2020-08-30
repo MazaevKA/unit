@@ -1,0 +1,256 @@
+.header {
+    position: relative;
+    background: #4f575b url("./../img/header/header-bg.webp") center/cover no-repeat;
+    color: #fff;
+    &::before {
+        content: "";
+        position: absolute;
+        display: block;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+    //Медиа запрос для планшетов и выше
+    @media (min-width: 768px) {
+        height: 568px;
+    }
+    //Медиа запрос для десктопов
+    @media (min-width: 1200px) {
+        height: 870px;
+        min-height: auto;
+    }
+}
+.header__content {
+    position: relative;
+    padding-top: 86px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 65px;
+    //Медиа запрос для планшетов и выше
+    @media (min-width: 768px) {
+        align-items: center;
+        padding-top: 41px;
+    }
+    //Медиа запрос для десктопов
+    @media (min-width: 1200px) {
+        padding-top: 31px;
+    }
+}
+.header__title {
+    font-size: 62px;
+    letter-spacing: 12.4px;
+    margin: 0;
+    margin-bottom: 10px;
+    text-align: center;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1.2;
+    //Медиа запрос для планшетов и выше
+    @media (min-width: 768px) {
+        font-size: 82px;
+        letter-spacing: 16.4px;
+        margin-bottom: 5px;
+    }
+    //Медиа запрос для десктопов
+    @media (min-width: 1200px) {
+        font-size: 96px;
+        letter-spacing: 19.2px;
+        margin-bottom: 46px;
+    }
+}
+.heaader__subtitle {
+    margin-bottom: 22px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    text-align: center;
+    // max-width: 725px;
+    //Медиа запрос для планшетов и выше
+    @media (min-width: 768px) {
+        margin-bottom: 54px;
+        width: 600px;
+    }
+    //Медиа запрос для десктопов
+    @media (min-width: 1200px) {
+        font-size: 20px;
+        font-weight: 700;
+        margin-bottom: 65px;
+        min-width: 750px;
+    }
+}
+.heaader__subtitle p {
+    margin: 0;
+    margin-bottom: 15px;
+    letter-spacing: -0.3px;
+    //Медиа запрос для планшетов и выше
+    @media (min-width: 768px) {
+        letter-spacing: -0.3px;
+    }
+    //Медиа запрос для десктопов
+    @media (min-width: 1200px) {
+        letter-spacing: 0;
+        padding: 0;
+    }
+}
+.heaader__subtitle span {
+    letter-spacing: 1.6px;
+}
+.header__form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    @media (min-width: 520px) {
+        max-width: 490px;
+    }
+    //Медиа запрос для планшетов и выше
+    @media (min-width: 768px) {
+        flex-direction: row;
+        width: auto;
+    }
+}
+.header__form input {
+    margin-bottom: 10px;
+    //Медиа запрос для планшетов и выше
+    @media (min-width: 768px) {
+        margin-right: 20px;
+        margin-bottom: 0;
+    }
+}
+.input {
+    height: 60px;
+    padding: 0 30px;
+    border: none;
+    border-radius: 30px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color:#fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    transition: background-color 0.2s ease;
+    &::placeholder {
+        color: #fff;
+    }
+    &:focus, &:hover {
+        outline: none;
+        background-color: rgba(0, 0, 0, 0.65);
+    }
+    //Медиа запрос для планшетов и выше
+    @media (min-width: 768px) {
+        width: 200px;
+    }
+    //Медиа запрос для десктопов
+    @media (min-width: 1200px) {
+        padding: 0 28px;
+    }
+}
+.button-submit {
+    padding: 0 28px;
+    height: 60px;
+    border: none;
+    border-radius: 30px;
+    background-color: #50e3a4;
+    cursor: pointer;
+    color: #ffffff;
+    outline: none;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 40px;
+    text-transform: uppercase;
+    letter-spacing: 2.8px;
+    transition: background-color 0.2s ease;
+    white-space: nowrap;
+    &:hover {
+        outline: none;
+        background-color: darken(#50e3a4, 20%);
+    }
+}
+.header__scroll {
+    display: none;
+    //Медиа запрос для десктопов
+    @media (min-width: 1200px) {
+        display: block;
+        position: absolute;
+        bottom: 120px;
+        height: 48px;
+        width: 32px;
+        &:hover {
+            transform: rotate(180deg);
+        }
+    }
+}
+.header__top-buttons {
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+.header__nav-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    &:hover {
+        outline: none;
+        background-color: rgba(0, 0, 0, 0.8);
+        transform: scale(1.2,1.2);
+    }
+    //Медиа запрос для планшетов и выше
+    @media (min-width: 768px) {
+        top: 20px;
+        left: 20px;
+        right: auto;
+    }
+    //Медиа запрос для десктопов
+    @media (min-width: 1200px) {
+        top: 60px;
+        left: 68px;
+        right: auto;
+    }
+}
+.header__search-button {
+    display: none;
+    //Медиа запрос для планшетов и выше
+    @media (min-width: 768px) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        width: 60px;
+        height: 60px;
+        background-color: rgba(0, 0, 0, 0.5);
+        border-radius: 50%;
+        cursor: pointer;
+        transition: all 0.2s ease;
+        &:hover {
+            outline: none;
+            background-color: rgba(0, 0, 0, 0.7);
+            transform: scale(1.2,1.2);
+        }
+    }
+    //Медиа запрос для планшетов и выше
+    @media (min-width: 768px) {
+        right: 20px;
+    }
+    //Медиа запрос для десктопов
+    @media (min-width: 1200px) {
+        top: 60px;
+        right: 72px;
+    }
+}

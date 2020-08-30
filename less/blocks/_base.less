@@ -1,0 +1,113 @@
+@font-face {
+    font-family: Montserrat;
+    src: url(./../fonts/Montserrat-Regular.ttf);
+    src: url(./../fonts/Montserrat-medium.ttf);
+    src: url(./../fonts/Montserrat-bold.ttf);
+}
+* {
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+.container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding-right: 15px;
+    padding-left: 15px;
+    //Медиа запрос для планшетов и выше
+    @media (min-width: 768px) {
+        max-width: 768px;
+    }
+    //Медиа запрос для десктопов
+    @media (min-width: 1200px) {
+        max-width: 1200px;
+    }
+}
+.header__center {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.column-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.relative {
+    position: relative;
+}
+.none {
+    display: none;
+}
+.section-title {
+    margin: 0;
+    color: #50e3a4;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 3.2px;
+}
+.section-title.section-title--small {
+    font-size: 16px;
+    letter-spacing: 3.2px;
+    //Медиа запрос для десктопов
+    @media (min-width: 1200px) {
+        font-size: 14px;
+        letter-spacing: 2.8px;
+    }
+}
+.section-subtitle {
+    margin: 0;
+    color: #2e2e2e;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1.2;
+    //Медиа запрос для планшетов и выше
+    @media (min-width: 768px) {
+        font-size: 42px;
+    }
+    //Медиа запрос для десктопов
+    @media (min-width: 1200px) {
+        font-size: 48px;
+    }
+}
+.functional__title {
+    margin-bottom: 36px;
+    text-align: center;
+    //Медиа запрос для планшетов и выше
+    @media (min-width: 768px) {
+        margin-bottom: 24px;
+    }
+    //Медиа запрос для десктопов
+    @media (min-width: 1200px) {
+        margin-bottom: 72px;
+    }
+}
+.functional__subtitle {
+    margin-bottom: 27px;
+    text-align: center;
+    //Медиа запрос для планшетов и выше
+    @media (min-width: 768px) {
+        margin-bottom: 42px;
+    }
+    //Медиа запрос для десктопов
+    @media (min-width: 1200px) {
+        margin-bottom: 85px;
+    }
+}
+.section-text {
+    color: #808080;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.71;
+    //Медиа запрос для десктопов
+    @media (min-width: 1200px) {
+        line-height: 2.14;
+    }
+}
